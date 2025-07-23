@@ -1,0 +1,1196 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.containor {
+    width: 100%;
+    height: 75vh;
+    background-image: linear-gradient(to right, #242943c7), url(pic03.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.landing {
+    width: 100%;
+    height: 75vh;
+    text-align: center;
+}
+
+.landing h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    padding-bottom: 30px;
+    width: 73%;
+    text-align: left;
+    border-bottom: 2px solid white;
+}
+
+
+
+
+
+
+
+.start {
+    position: absolute;
+    bottom: 32%;
+    left: 13%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    width: 500px;
+    letter-spacing: 3px;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+}
+
+.landing button {
+    background-color: transparent;
+    border: 2px solid white;
+    text-align: center;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    bottom: 31%;
+    left: 43%;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: 700;
+    transition: 0.4s ease;
+}
+
+.landing button:hover {
+    border-color: aqua;
+}
+
+.landing i {
+    transition: 0.4s;
+}
+
+
+.get {
+    transition: 0.4s;
+    font-weight: 700;
+}
+
+.landing button:hover span {
+    color: aqua;
+}
+
+.landing button:hover i {
+    color: aqua;
+}
+
+@media (max-width:1550px) {
+    .landing button {
+        position: absolute;
+        left: 55%;
+    }
+}
+
+@media (max-width:1175px) {
+    .landing button {
+        position: absolute;
+        left: 65%;
+    }
+}
+
+@media (max-width:935px) {
+    .landing button {
+        position: absolute;
+        bottom: 20%;
+        left: 13%;
+    }
+}
+
+@media (max-width:755px) {
+    .landing h1 {
+        font-size: 35px;
+
+    }
+
+    .landing .start {
+        bottom: 35%;
+    }
+
+}
+
+@media (max-width:585px) {
+    .landing .start {
+        width: fit-content;
+    }
+}
+
+@media(max-height:733px) {
+    .landing .start {
+        bottom: 29%;
+    }
+
+    .landing button {
+        bottom: 15%
+    }
+}
+
+@media(max-height:640px) {
+    .landing .start {
+        bottom: 26%;
+    }
+}
+
+@media (max-width:430px) {
+    .con nav {
+        display: none;
+    }
+
+    .landing h1 {
+        font-size: 20px;
+    }
+}
+
+.header .con a {
+    padding: 10px;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s ease;
+
+}
+
+.header .con a:hover {
+    color: aqua;
+}
+
+.header .con a span {
+    background-color: #ffffff;
+    color: #242943;
+    display: inline-block;
+    margin-right: 0.325em;
+    padding: 3px;
+    transition: 0.5s ease;
+    border-radius: 2px;
+}
+
+.header .con a:hover span {
+    background-color: aqua;
+}
+
+.header {
+    background-color: transparent;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.con {
+    padding-top: 15px;
+    width: 98%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+
+}
+
+
+.links {
+    display: flex;
+    gap: 5PX;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.links p {
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: white;
+    padding: 0 0 4px 0;
+    transition: color 0.4s;
+    font-weight: 600;
+}
+
+.links .icon {
+    width: 30px;
+    margin-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.links .icon span {
+    background-color: white;
+    margin-bottom: 3px;
+    transition: 0.4s ease;
+}
+
+.links .icon span:first-child {
+    width: 27px;
+    height: 2px;
+}
+
+.links .icon span:nth-child(2) {
+    width: 27px;
+    height: 2px;
+}
+
+.links .icon span:last-child {
+    width: 27px;
+    height: 2px;
+}
+
+.links:hover p {
+    color: aqua;
+}
+
+.links:hover .icon span {
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+.boxcon {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: aqua;
+    width: 100%;
+    height: fit-content;
+}
+
+.box1 {
+    position: relative;
+    flex-basis: 460px;
+    height: 250px;
+    background-image: url(https://html5up.net/uploads/demos/forty/images/pic01.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.box1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #6afcfcd7, #6afcfcd7);
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.box1:hover::before {
+    opacity: 0;
+}
+
+.box2 {
+    position: relative;
+    flex-basis: 460px;
+    height: 250px;
+    background-image: url(https://html5up.net/uploads/demos/forty/images/pic02.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.box2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #9c619cd2);
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.box2:hover::before {
+    opacity: 0;
+}
+
+.box3 {
+    position: relative;
+    flex-basis: 460px;
+    height: 250px;
+    background-image: url(https://html5up.net/uploads/demos/forty/images/pic07.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.box3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #b96a6ace);
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.box3:hover::before {
+    opacity: 0;
+}
+
+.box4 {
+    position: relative;
+    flex-basis: 460px;
+    height: 250px;
+    background-image: url(https://html5up.net/uploads/demos/forty/images/pic04.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.box4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #b4b464ce);
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.box4:hover::before {
+    opacity: 0;
+}
+
+.box5 {
+    position: relative;
+    flex-basis: 460px;
+    height: 250px;
+    background-image: url(https://html5up.net/uploads/demos/forty/images/pic05.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.box5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #6d6dccd5);
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.box5:hover::before {
+    opacity: 0;
+}
+
+.box6 {
+    position: relative;
+    flex-basis: 460px;
+    height: 250px;
+    background-image: url(https://html5up.net/uploads/demos/forty/images/pic06.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.box6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #58cf58c4);
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.box6:hover::before {
+    opacity: 0;
+}
+
+.box1 h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 45px;
+    padding-bottom: 15px;
+    width: 45%;
+    border-bottom: 2px solid white;
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+.box1 p {
+    width: 40%;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+}
+
+.box2 h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 45px;
+    padding-bottom: 15px;
+    width: 45%;
+    border-bottom: 2px solid white;
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+.box2 p {
+    width: 40%;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+}
+
+.box3 h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 45px;
+    padding-bottom: 15px;
+    width: 45%;
+    border-bottom: 2px solid white;
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+.box3 p {
+    width: 40%;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+}
+
+.box4 h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 45px;
+    padding-bottom: 15px;
+    width: 45%;
+    border-bottom: 2px solid white;
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+.box4 p {
+    width: 40%;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+}
+
+.box5 h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 45px;
+    padding-bottom: 15px;
+    width: 45%;
+    border-bottom: 2px solid white;
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+.box5 p {
+    width: 40%;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+}
+
+.box6 h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 45px;
+    padding-bottom: 15px;
+    width: 45%;
+    border-bottom: 2px solid white;
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+.box6 p {
+    width: 40%;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+}
+
+
+
+
+.messa {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242943;
+    position: relative;
+}
+
+.messabox {
+    display: grid;
+    gap: 75px;
+}
+
+.messabox h1 {
+    color: white;
+    text-transform: capitalize;
+    margin: 0 0 40px 180px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+    width: 220px;
+}
+
+.messabox p {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    width: 85%;
+    margin-left: 180px;
+    margin-top: -70px;
+    margin-bottom: 30px;
+    height: fit-content;
+    line-height: 1.3;
+}
+
+.messabox button {
+    background-color: transparent;
+    border: 2px solid white;
+    text-align: center;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    bottom: 13%;
+    left: 180px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: 700;
+    transition: 0.4s ease;
+}
+
+.messabox button:hover {
+    border-color: aqua;
+}
+
+.messabox i {
+    transition: 0.4s;
+}
+
+.get {
+    transition: 0.4s;
+    font-weight: 700;
+}
+
+.messabox button:hover span {
+    color: aqua;
+}
+
+.messabox button:hover i {
+    color: aqua;
+}
+
+@media (max-width:1200px) {
+    .messabox h1 {
+        margin: 0 0 40px 120px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid white;
+        width: 300px;
+    }
+
+    .messabox p {
+        margin-left: 120px;
+    }
+
+    .messabox button {
+        background-color: transparent;
+        border: 2px solid white;
+        text-align: center;
+        padding: 15px 20px;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        bottom: 10%;
+        left: 120px;
+        cursor: pointer;
+        letter-spacing: 3px;
+        font-weight: 700;
+        transition: 0.4s ease;
+    }
+}
+
+@media(max-width:980px) {
+    .messabox button {
+        bottom: 8%;
+    }
+}
+
+@media(max-width:830px) {
+    .messabox button {
+        bottom: 6%;
+    }
+}
+
+@media(max-width:730px) {
+    .messabox h1 {
+        margin: 0 0 40px 60px;
+    }
+
+    .messabox p {
+        margin-left: 60px;
+        margin-bottom: 120px;
+    }
+
+    .messabox button {
+        bottom: 25%;
+        left: 60px;
+    }
+
+    .messa {
+        height: 70vh;
+    }
+}
+
+@media(max-width:560px) {
+    .messabox h1 {
+        margin: 0 0 60px 30px;
+    }
+
+    .messabox p {
+        margin-left: 30px;
+        margin-bottom: 150px;
+    }
+
+    .messabox button {
+        bottom: 25%;
+        left: 30px;
+    }
+
+    .messabox {
+        display: grid;
+        gap: 40px;
+    }
+}
+
+@media(max-width:500px) {
+    .messabox h1 {
+        margin: 20px 0 60px 30px;
+    }
+
+    .messabox p {
+        margin-left: 30px;
+        margin-bottom: 150px;
+    }
+
+    .messabox button {
+        bottom: 20%;
+        left: 30px;
+    }
+
+    .messabox {
+        display: grid;
+        gap: 30px;
+    }
+}
+
+@media(max-width:430px) {
+    .messabox p {
+        width: 85%;
+        font-size: 18px;
+    }
+
+    .messa {
+        height: 70vh;
+        background-color: #242943;
+        overflow: hidden;
+    }
+
+    .messabox {
+        background-color: #242943;
+    }
+
+    .messabox h1 {
+        margin: 40px 0 60px 30px;
+    }
+
+    .messabox p {
+        margin-left: 30px;
+        margin-bottom: 150px;
+    }
+
+    .messabox button {
+        bottom: 13%;
+        left: 30px;
+    }
+}
+
+@media(max-height:700px) {
+    .messa {
+        height: 85vh;
+        background-color: #242943;
+        overflow: hidden;
+    }
+
+    .messabox {
+        background-color: #242943;
+    }
+
+    .messabox h1 {
+        margin: 80px 0 60px 30px;
+    }
+
+    .messabox p {
+        margin-left: 30px;
+        margin-bottom: 150px;
+    }
+
+    .messabox button {
+        bottom: 5%;
+        left: 30px;
+    }
+}
+
+
+
+
+
+.parent {
+    width: 100%;
+    height: 75vh;
+    background-color: #2c3354;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    border-bottom: 1px solid #ffffff83;
+}
+
+.left {
+    width: 75%;
+    height: 100%;
+    background-color: #2c3354;
+    position: relative;
+    border-right: 1px solid #ffffff83;
+    border-bottom: 1px solid #ffffff83;
+}
+
+.n1 {
+    display: grid;
+    gap: 15px;
+    width: 34%;
+    height: fit-content;
+    background-color: #2c3354;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 5px;
+}
+
+label {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#text {
+    width: 100%;
+    height: 70px;
+    background-color: #242943;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.n2 {
+    display: grid;
+    gap: 15px;
+    width: 34%;
+    height: fit-content;
+    background-color: #2c3354;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    border-radius: 5px;
+
+}
+
+#email {
+    width: 100%;
+    height: 70px;
+    background-color: #242943;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.n3 {
+    display: grid;
+    gap: 15px;
+    width: 74%;
+    height: fit-content;
+    background-color: #2c3354;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    border-radius: 5px;
+
+}
+
+#message {
+    width: 100%;
+    height: 300px;
+    background-color: #242943;
+    border: none;
+    border-radius: 5px;
+}
+
+.left .b1 {
+    background-color: white;
+    text-align: center;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    color: #000;
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.4s ease;
+}
+.left .b1:hover{
+    background-color: aqua;
+}
+@media(max-width:1200px){
+    .parent {
+        display: grid;
+    }
+    .left{
+        width: 100%;
+        height: 80vh;
+    }
+    .n1{
+        width: 40%;
+    }
+    
+    .n2{
+        width: 40%;
+        left: 53%;
+    }
+    .n3 {
+        width: 83%;
+        left: 10%;
+    }
+    .left .b1 {
+        bottom: 12%;
+    }
+    .left .b2 {
+        background-color: transparent;
+        text-align: center;
+        padding: 20px 25px;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        bottom: 2%;
+    }
+}
+@media(max-height:830px){
+    .left{
+        width: 100%;
+        height: 90vh;
+    }
+    .left .b1 {
+        bottom: 12%;
+    }
+}
+@media(max-height:785px){
+    .left{
+        width: 100%;
+        height: 105vh;
+    }
+    .left .b1 {
+        bottom: 13%;
+    }
+}
+@media(max-height:685px){
+    .left{
+        width: 100%;
+        height: 120vh;
+    }
+    .left .b1 {
+        bottom: 13%;
+    }
+}
+.left .b2 {
+    background-color: transparent;
+    text-align: center;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    bottom: 2%;
+    left: 10%;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 18px;
+    border: 1px solid white;
+    transition: color 0.4s ease;
+}
+.left .b2 span{
+    transition: color 0.4s ease;
+}
+.left .b2:hover span{
+    color: aqua;
+}
+.b2:hover{
+    border-color: aqua;
+}
+.right{
+    width: 59%;
+    height: 100%;
+    position: relative;
+    display: grid;
+}
+.email{
+    display: grid;
+    position: relative;
+    border-bottom: 1px solid #ffffff83;
+}
+.email .top{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top:40%;
+    left: 15%;
+}
+.email .top i{
+    color: white;
+    font-size: 25px;
+}
+.email .top h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+.email a{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 60%;
+    left: 21%;
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+    border-bottom: 1px dotted currentColor;
+    transition: color 0.4s ease;
+}
+a:hover{
+    color:aqua;
+    border: none;
+}
+
+.phone{
+    display: grid;
+    position: relative;
+    border-bottom: 1px solid #ffffff83;
+}
+.phone .mid{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top:40%;
+    left: 15%;
+}
+.phone .mid i{
+    color: white;
+    font-size: 25px;
+}
+.phone .mid h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+.phone a{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 60%;
+    left: 21%;
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+    transition: color 0.4s ease;
+}
+.phone a:hover{
+    color:aqua;
+    border: none;
+}
+
+.addres{
+    display: grid;
+    position: relative;
+}
+.addres .bottom{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top:40%;
+    left: 15%;
+}
+.addres .bottom i{
+    color: white;
+    font-size: 25px;
+}
+.addres .bottom h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+.addres  a{
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    top: 60%;
+    left: 21%;
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+    transition: color 0.4s ease;
+}
+.addres a:hover{
+    color:aqua;
+    border: none;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 200px;
+    width: 100%;
+    height: 250px;
+    background-color: #2c3354;
+
+}
+.contact i{
+    font-size: 30px;
+    position: relative;
+}
+.contact a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000d1;
+    background-color: white;
+    transition: 0.4s ease;
+}
+.contact a:hover{
+    background-color: aqua;
+}
